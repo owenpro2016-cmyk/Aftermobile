@@ -1,0 +1,14 @@
+{
+"geode": "4.6.1",
+"gd": { "android": "2.2074" },
+"id": "owenpro2016.inputassist",
+"name": "InputAssist",
+"version": "v1.0.0",
+"developer": "owenpro2016",
+"description": "Asistencia de entrada para movil.",
+"repository": "https://github.com/owenpro2016/InputAssist",
+"platforms": ["android32", "android64"],
+"settings": {
+"enabled": { "type": "bool", "default": true, "name": "Activar Asistencia" }
+}
+}
