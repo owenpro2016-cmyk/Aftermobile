@@ -1,1 +1,1 @@
-{"name":"Build","on":["push","workflow_dispatch"],"jobs":{"build":{"runs-on":"ubuntu-latest","steps":[{"uses":"actions/checkout@v4"},{"uses":"geode-sdk/build-geode-mod@main","with":{"combine":true}}]}}}
+{"name":"Build","on":["push","workflow_dispatch"],"jobs":{"build":{"runs-on":"ubuntu-latest","steps":[{"uses":"actions/checkout@v4"},{"name":"Git fix","run":"git config --global http.version HTTP/1.1 && git config --global http.postBuffer 524288000"},{"uses":"geode-sdk/build-geode-mod@main","with":{"combine":true}}]}}}
